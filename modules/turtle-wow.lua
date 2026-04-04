@@ -47,7 +47,8 @@ pfUI:RegisterModule("turtle-wow", "vanilla", function ()
     -- Check if pfUI is handling group or raid for the current situation
     local function pfUIHandlesGroupOrRaid()
       if GetNumRaidMembers() > 0 then
-        return C.unitframes.raid and C.unitframes.raid.visible == "1"
+        local raidDisabled = C["disabled"] and C["disabled"]["raid"] == "1"
+        return not raidDisabled and C.unitframes.raid and C.unitframes.raid.visible == "1"
       else
         return C.unitframes.group and C.unitframes.group.visible == "1"
       end
