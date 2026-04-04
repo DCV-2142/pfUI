@@ -1233,6 +1233,8 @@ pfUI:RegisterModule("thirdparty-vanilla", "vanilla", function()
   -- UnitXP SP3 compatibility
   -- https://github.com/allfoxwy/UnitXP_SP3
   HookAddonOrVariable("UnitXP_SP3_Addon", function()
+    if C.thirdparty.unitxpsp3.skin ~= "1" then return end
+
     -- skin UnitXP SP3 window and elements
     StripTextures(xpsp3Frame)
     CreateBackdrop(xpsp3Frame)
