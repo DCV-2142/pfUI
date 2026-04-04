@@ -62,12 +62,14 @@ pfUI:RegisterModule("skin", "vanilla", function ()
     end)
   end
 
-  for i = 1, UIDROPDOWNMENU_MAXLEVELS do
-    CreateBackdrop(_G["DropDownList"..i.."MenuBackdrop"], nil, true, .8)
-    CreateBackdropShadow(_G["DropDownList"..i.."MenuBackdrop"])
+  if not (C.disabled and C.disabled.skin_dropdowns == "1") then
+    for i = 1, UIDROPDOWNMENU_MAXLEVELS do
+      CreateBackdrop(_G["DropDownList"..i.."MenuBackdrop"], nil, true, .8)
+      CreateBackdropShadow(_G["DropDownList"..i.."MenuBackdrop"])
 
-    CreateBackdrop(_G["DropDownList"..i.."Backdrop"], nil, true, .8)
-    CreateBackdropShadow(_G["DropDownList"..i.."Backdrop"])
+      CreateBackdrop(_G["DropDownList"..i.."Backdrop"], nil, true, .8)
+      CreateBackdropShadow(_G["DropDownList"..i.."Backdrop"])
+    end
   end
 
   if C.global.errors_limit == "1" then

@@ -3011,6 +3011,9 @@ pfUI:RegisterModule("gui", "vanilla:tbc", function ()
         pfUI:UpdateConfig("disabled", nil, "skin_" .. m, "0")
         CreateConfig(nil, T["Disable Skin"] .. " " .. m, C.disabled, "skin_" .. m, "checkbox")
       end
+
+      pfUI:UpdateConfig("disabled", nil, "skin_dropdowns", "0")
+      CreateConfig(nil, T["Disable Skin"] .. " Dropdown Menus", C.disabled, "skin_dropdowns", "checkbox")
     end)
   end
 end)
