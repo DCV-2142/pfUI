@@ -24,6 +24,7 @@
   <Include file="..\skins\blizzard\trainer.lua"/>
   <Include file="..\skins\blizzard\battlefield.lua"/>
   <Include file="..\skins\blizzard\dressup.lua"/>
+  <Include file="..\skins\blizzard\dropdowns.lua"/>
   <Include file="..\skins\blizzard\game_menu.lua"/>
   <Include file="..\skins\blizzard\guild_registrar.lua"/>
   <Include file="..\skins\blizzard\help.lua"/>
