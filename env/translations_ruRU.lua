@@ -726,6 +726,7 @@ pfUI_translation["ruRU"] = {
   ["Show Macro Text"] = "Показать текст макросов",
   ["Show Meters By Default"] = "Показать счетчики по умолчанию",
   ["Show Milliseconds When Timer Runs Out"] = "Показать миллисекунды, когда таймер заканчивается",
+  ["Show Native Chat Buttons"] = nil,
   ["Show On Friendly Units"] = "Показать на дружественных юнитах",
   ["Show On Hostile Units"] = "Показать на вражеских юнитах",
   ["Show Procs Indicators"] = "Показать проки (Procs)",

@@ -726,6 +726,7 @@ pfUI_translation["koKR"] = {
   ["Show Macro Text"] = "매크로 텍스트 표시",
   ["Show Meters By Default"] = nil,
   ["Show Milliseconds When Timer Runs Out"] = nil,
+  ["Show Native Chat Buttons"] = nil,
   ["Show On Friendly Units"] = nil,
   ["Show On Hostile Units"] = nil,
   ["Show Procs Indicators"] = nil,

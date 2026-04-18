@@ -726,6 +726,7 @@ pfUI_translation["frFR"] = {
   ["Show Macro Text"] = "Afficher le texte des macros",
   ["Show Meters By Default"] = "Afficher les compteurs par défaut",
   ["Show Milliseconds When Timer Runs Out"] = "Afficher les Millisecondes quand le temps est épuisée",
+  ["Show Native Chat Buttons"] = nil,
   ["Show On Friendly Units"] = "Afficher sur les unités amicales",
   ["Show On Hostile Units"] = "Afficher sur les unités hostiles",
   ["Show Procs Indicators"] = "Afficher les indicateurs de Procs",

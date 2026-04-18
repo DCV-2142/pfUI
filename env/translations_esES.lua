@@ -726,6 +726,7 @@ pfUI_translation["esES"] = {
   ["Show Macro Text"] = "Mostrar texto de macro",
   ["Show Meters By Default"] = "Mostrar medidores por defecto",
   ["Show Milliseconds When Timer Runs Out"] = "Mostrar milisegundos cuando el temporizador se acaba",
+  ["Show Native Chat Buttons"] = nil,
   ["Show On Friendly Units"] = "Mostrar en unidades amistosas",
   ["Show On Hostile Units"] = "Mostrar en unidades enemigas",
   ["Show Procs Indicators"] = "Mostrar indicadores de beneficios temporales activados",

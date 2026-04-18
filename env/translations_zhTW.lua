@@ -726,6 +726,7 @@ pfUI_translation["zhTW"] = {
   ["Show Macro Text"] = "顯示巨集的名字",
   ["Show Meters By Default"] = "由默認顯示其他介面表",
   ["Show Milliseconds When Timer Runs Out"] = nil,
+  ["Show Native Chat Buttons"] = nil,
   ["Show On Friendly Units"] = nil,
   ["Show On Hostile Units"] = nil,
   ["Show Procs Indicators"] = nil,

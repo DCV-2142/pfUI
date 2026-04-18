@@ -727,6 +727,7 @@ pfUI_translation["zhCN"] = {
   ["Show Macro Text"] = "显示宏的名字",
   ["Show Meters By Default"] = "由默认显示其他接口表",
   ["Show Milliseconds When Timer Runs Out"] = "当冷却即将结束时显示毫秒",
+  ["Show Native Chat Buttons"] = nil,
   ["Show On Friendly Units"] = "显示友好单位姓名板",
   ["Show On Hostile Units"] = "显示敌对单位姓名板",
   ["Show Procs Indicators"] = "显示触发效果计时器",

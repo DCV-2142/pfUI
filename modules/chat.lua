@@ -308,12 +308,14 @@ pfUI:RegisterModule("chat", "vanilla:tbc", function ()
       ChatTypeInfo.CHANNEL.sticky = 1
     end
 
-    ChatFrameMenuButton:Hide()
+    if C.chat.global.nativebuttons ~= "1" then
+      ChatFrameMenuButton:Hide()
+      CreateBackdrop(ChatMenu)
+      CreateBackdrop(EmoteMenu)
+      CreateBackdrop(LanguageMenu)
+      CreateBackdrop(VoiceMacroMenu)
+    end
     ChatMenu:SetClampedToScreen(true)
-    CreateBackdrop(ChatMenu)
-    CreateBackdrop(EmoteMenu)
-    CreateBackdrop(LanguageMenu)
-    CreateBackdrop(VoiceMacroMenu)
 
     local combatlogpanel = (CombatLogQuickButtonFrame_Custom and CombatLogQuickButtonFrame_Custom:GetHeight() or 0)
 
@@ -588,12 +590,14 @@ pfUI:RegisterModule("chat", "vanilla:tbc", function ()
   end
 
   for i=1, NUM_CHAT_WINDOWS do
-    _G["ChatFrame" .. i .. "UpButton"]:Hide()
-    _G["ChatFrame" .. i .. "UpButton"].Show = function() return end
-    _G["ChatFrame" .. i .. "DownButton"]:Hide()
-    _G["ChatFrame" .. i .. "DownButton"].Show = function() return end
-    _G["ChatFrame" .. i .. "BottomButton"]:Hide()
-    _G["ChatFrame" .. i .. "BottomButton"].Show = function() return end
+    if C.chat.global.nativebuttons ~= "1" then
+      _G["ChatFrame" .. i .. "UpButton"]:Hide()
+      _G["ChatFrame" .. i .. "UpButton"].Show = function() return end
+      _G["ChatFrame" .. i .. "DownButton"]:Hide()
+      _G["ChatFrame" .. i .. "DownButton"].Show = function() return end
+      _G["ChatFrame" .. i .. "BottomButton"]:Hide()
+      _G["ChatFrame" .. i .. "BottomButton"].Show = function() return end
+    end
     _G["ChatFrame" .. i .. "Tab"]._SetAlpha = _G["ChatFrame" .. i .. "Tab"].SetAlpha
     _G["ChatFrame" .. i .. "Tab"].SetAlpha = SkipFading
   end
